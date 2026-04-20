@@ -302,7 +302,7 @@ const styles = {
     maxWidth: "480px",
     width: "100%",
   },
-  decisionCard: (active) => ({
+  decisionCard: (active: boolean) => ({
     background: active ? COLORS.accent : COLORS.card,
     border: `1px solid ${active ? COLORS.accent : COLORS.border}`,
     borderRadius: "12px",
@@ -312,7 +312,7 @@ const styles = {
     textAlign: "left",
   }),
   decisionEmoji: { fontSize: "24px", marginBottom: "10px", display: "block" },
-  decisionLabel: (active) => ({
+  decisionLabel: (active: boolean) => ({
     fontFamily: "'DM Mono', monospace",
     fontSize: "12px",
     fontWeight: 500,
@@ -339,7 +339,7 @@ const styles = {
     marginBottom: "32px",
     overflow: "hidden",
   },
-  progressFill: (pct) => ({
+  progressFill: (pct: number) => ({
     height: "100%",
     width: `${pct}%`,
     background: COLORS.accent,
@@ -357,7 +357,7 @@ const styles = {
     display: "flex",
     gap: "12px",
   },
-  btn: (type) => ({
+  btn: (type: string) => ({
     flex: 1,
     padding: "18px 12px",
     borderRadius: "12px",
@@ -377,7 +377,7 @@ const styles = {
     width: "100%",
     marginTop: "8px",
   },
-  resultCard: (type) => ({
+  resultCard: (type: string) => ({
     background: COLORS.card,
     border: `1px solid ${type === "yes" ? COLORS.yes : type === "no" ? COLORS.no : COLORS.maybe}`,
     borderRadius: "16px",
@@ -386,13 +386,13 @@ const styles = {
     position: "relative",
     overflow: "hidden",
   }),
-  resultGlow: (type) => ({
+  resultGlow: (type: string) => ({
     position: "absolute",
     top: 0, left: 0, right: 0,
     height: "3px",
     background: type === "yes" ? COLORS.yes : type === "no" ? COLORS.no : COLORS.maybe,
   }),
-  resultLabel: (type) => ({
+  resultLabel: (type: string) => ({
     fontFamily: "'DM Mono', monospace",
     fontSize: "11px",
     letterSpacing: "0.2em",
