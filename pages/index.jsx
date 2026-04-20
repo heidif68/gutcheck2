@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 const decisions = [
@@ -303,7 +302,7 @@ const styles = {
     maxWidth: "480px",
     width: "100%",
   },
-  decisionCard: (active: boolean) => ({
+  decisionCard: (active) => ({
     background: active ? COLORS.accent : COLORS.card,
     border: `1px solid ${active ? COLORS.accent : COLORS.border}`,
     borderRadius: "12px",
@@ -313,7 +312,7 @@ const styles = {
     textAlign: "left",
   }),
   decisionEmoji: { fontSize: "24px", marginBottom: "10px", display: "block" },
-  decisionLabel: (active: boolean) => ({
+  decisionLabel: (active) => ({
     fontFamily: "'DM Mono', monospace",
     fontSize: "12px",
     fontWeight: 500,
@@ -340,7 +339,7 @@ const styles = {
     marginBottom: "32px",
     overflow: "hidden",
   },
-  progressFill: (pct: number) => ({
+  progressFill: (pct) => ({
     height: "100%",
     width: `${pct}%`,
     background: COLORS.accent,
@@ -358,7 +357,7 @@ const styles = {
     display: "flex",
     gap: "12px",
   },
-  btn: (type: string) => ({
+  btn: (type) => ({
     flex: 1,
     padding: "18px 12px",
     borderRadius: "12px",
@@ -378,7 +377,7 @@ const styles = {
     width: "100%",
     marginTop: "8px",
   },
-  resultCard: (type: string) => ({
+  resultCard: (type) => ({
     background: COLORS.card,
     border: `1px solid ${type === "yes" ? COLORS.yes : type === "no" ? COLORS.no : COLORS.maybe}`,
     borderRadius: "16px",
@@ -387,13 +386,13 @@ const styles = {
     position: "relative",
     overflow: "hidden",
   }),
-  resultGlow: (type: string) => ({
+  resultGlow: (type) => ({
     position: "absolute",
     top: 0, left: 0, right: 0,
     height: "3px",
     background: type === "yes" ? COLORS.yes : type === "no" ? COLORS.no : COLORS.maybe,
   }),
-  resultLabel: (type: string) => ({
+  resultLabel: (type) => ({
     fontFamily: "'DM Mono', monospace",
     fontSize: "11px",
     letterSpacing: "0.2em",
