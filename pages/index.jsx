@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
 const decisions = [
   {
     id: "text",
@@ -645,6 +645,7 @@ export default function GutCheck() {
         <br />
         <a href="/privacy" style={{ color: "#444", textDecoration: "none" }}>Privacy Policy</a>
       </div>
+      <Analytics />
     </div>
   );
 }
