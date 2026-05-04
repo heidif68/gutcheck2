@@ -633,14 +633,10 @@ export default function GutCheck() {
             ← Try another decision
           </button>
 
-          {/* Ad slot */}
-          <div style={styles.adSlot}>
-            <div style={styles.adText}>Advertisement · Google AdSense</div>
-          </div>
-        </div>
-      )}
-<div style={styles.footer}>
+       <div style={styles.footer}>
         GUT CHECK · NOT ADVICE · JUST CLARITY
+        <br />
+        <a href="/privacy" style={{ color: "#444", textDecoration: "none" }}>Privacy Policy</a>
       </div>
     </div>
   );
