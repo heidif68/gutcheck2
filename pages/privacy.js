@@ -39,7 +39,7 @@ export default function Privacy() {
 
       <h2 style={{ fontSize: "16px", marginBottom: "8px" }}>Contact</h2>
       <p style={{ color: "#aaa", lineHeight: "1.8", marginBottom: "24px" }}>
-        If you have any questions about this privacy policy you can reach us at gutcheckfyi@gmail.com
+        If you have any questions about this privacy policy you can reach us at hello@gutcheck.fyi
       </p>
 
       <a href="/" style={{ color: "#e8ff47", fontSize: "12px" }}>Back to Gut Check</a>
