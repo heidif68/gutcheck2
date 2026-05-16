@@ -644,6 +644,8 @@ export default function GutCheck() {
         GUT CHECK · NOT ADVICE · JUST CLARITY
         <br />
         <a href="/privacy" style={{ color: "#444", textDecoration: "none" }}>Privacy Policy</a>
+{" · "}
+<a href="/about" style={{ color: "#444", textDecoration: "none" }}>About</a>
       </div>
       <Analytics />
     </div>
