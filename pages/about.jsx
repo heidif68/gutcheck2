@@ -22,7 +22,7 @@ export default function About() {
             Gut Check is a simple decision-helper tool built for the moments when you're going in circles — texting someone you shouldn't, quitting a job you might love, or buying something you definitely don't need.
           </p>
           <p style={{ fontSize: '16px', lineHeight: '1.8', color: '#555', margin: '0 0 1.2rem' }}>
-            We don't tell you what to do. We ask you questions until your own answer becomes obvious. No accounts, no data collection, no algorithm nudging you anywhere.
+            We don't tell you what to do. We ask you questions until your own answer becomes obvious. No accounts, no algorithm nudging you anywhere, and your answers never leave your browser. We only keep anonymous visit stats.
           </p>
           <p style={{ fontSize: '16px', lineHeight: '1.8', color: '#555', margin: '0' }}>
             Just clarity.
@@ -35,7 +35,7 @@ export default function About() {
             <p style={{ fontSize: '28px', fontWeight: '500', margin: '0' }}>15+</p>
           </div>
           <div style={{ background: '#f7f7f7', borderRadius: '12px', padding: '1.25rem' }}>
-            <p style={{ fontSize: '13px', color: '#999', margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Data we collect</p>
+            <p style={{ fontSize: '13px', color: '#999', margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Answers we see</p>
             <p style={{ fontSize: '28px', fontWeight: '500', margin: '0' }}>None.</p>
           </div>
           <div style={{ background: '#f7f7f7', borderRadius: '12px', padding: '1.25rem' }}>
