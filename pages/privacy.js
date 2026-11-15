@@ -27,6 +27,11 @@ export default function Privacy() {
         We use Google Analytics to understand how visitors use our site. This collects anonymous data such as pages visited and time spent. No personally identifiable information is collected.
       </p>
 
+      <h2 style={{ fontSize: "16px", marginBottom: "8px" }}>Vercel Analytics</h2>
+      <p style={{ color: "#aaa", lineHeight: "1.8", marginBottom: "24px" }}>
+        We also use Vercel Analytics, a privacy-friendly tool that counts page views without using cookies or collecting personal information.
+      </p>
+
       <h2 style={{ fontSize: "16px", marginBottom: "8px" }}>Cookies</h2>
       <p style={{ color: "#aaa", lineHeight: "1.8", marginBottom: "24px" }}>
         Gut Check itself does not use cookies. However Google Analytics may set cookies on your device. You can control cookies through your browser settings.
