@@ -444,25 +444,6 @@ const styles = {
     fontWeight: 700,
     marginBottom: "24px",
   },
-  adSlot: {
-    width: "100%",
-    maxWidth: "480px",
-    background: COLORS.card,
-    border: `1px dashed ${COLORS.border}`,
-    borderRadius: "8px",
-    height: "90px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: "24px",
-  },
-  adText: {
-    fontFamily: "'DM Mono', monospace",
-    fontSize: "10px",
-    color: "#444",
-    letterSpacing: "0.1em",
-    textTransform: "uppercase",
-  },
   footer: {
     fontFamily: "'DM Mono', monospace",
     fontSize: "10px",
@@ -634,14 +615,12 @@ export default function GutCheck() {
             ← Try another decision
           </button>
 
-     {/* Ad slot */}
-          <div style={styles.adSlot}>
-            <div style={styles.adText}>Advertisement · Google AdSense</div>
-          </div>
+          <PromoBanner />
         </div>
       )}
 
-      <PromoBanner />
+      {/* Result screen renders its own banner above; show one here everywhere else */}
+      {phase !== "result" && <PromoBanner />}
 
       <div style={styles.footer}>
         GUT CHECK · NOT ADVICE · JUST CLARITY
